@@ -4,35 +4,31 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FCD5861F-544C-494F-9B08-768E17F16733}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <StartupObject>Vista.My.MyApplication</StartupObject>
-    <RootNamespace>Vista</RootNamespace>
-    <AssemblyName>Vista</AssemblyName>
+    <ProjectGuid>{D39EA67F-DB72-43B2-8F57-7E25C22193B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BaseDatos</RootNamespace>
+    <AssemblyName>BaseDatos</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Vista.xml</DocumentationFile>
+    <DocumentationFile>BaseDatos.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Vista.xml</DocumentationFile>
+    <DocumentationFile>BaseDatos.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -50,9 +46,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,45 +58,13 @@
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Eliminar.Designer.vb">
-      <DependentUpon>Eliminar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Eliminar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ImporteSueldos.Designer.vb">
-      <DependentUpon>ImporteSueldos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ImporteSueldos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modificar.Designer.vb">
-      <DependentUpon>Modificar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Modificar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Registrar.Designer.vb">
-      <DependentUpon>Registrar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Registrar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Inicio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Inicio.Designer.vb">
-      <DependentUpon>Inicio.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Class1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -121,21 +82,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Eliminar.resx">
-      <DependentUpon>Eliminar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ImporteSueldos.resx">
-      <DependentUpon>ImporteSueldos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modificar.resx">
-      <DependentUpon>Modificar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registrar.resx">
-      <DependentUpon>Registrar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Inicio.resx">
-      <DependentUpon>Inicio.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -153,10 +99,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icono.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

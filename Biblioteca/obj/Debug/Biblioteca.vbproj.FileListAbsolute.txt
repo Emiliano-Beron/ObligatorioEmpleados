@@ -1,0 +1,10 @@
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\biblioteca.dll
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\biblioteca.pdb
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\biblioteca.xml
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\Biblioteca.vbprojAssemblyReference.cache
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\biblioteca.Resources.resources
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\Biblioteca.vbproj.GenerateResource.cache
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\Biblioteca.vbproj.CoreCompileInputs.cache
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\biblioteca.dll
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\biblioteca.xml
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\biblioteca.pdb
