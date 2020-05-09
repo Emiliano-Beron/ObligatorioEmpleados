@@ -43,7 +43,6 @@ C:\Users\Beron\Source\Repos\Emiliano-Beron\TrabajoObligatorio\TrabajoObligatorio
 C:\Users\Beron\Source\Repos\Emiliano-Beron\TrabajoObligatorio\TrabajoObligatorio1\Vista\obj\Debug\Vista.pdb
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.vbprojAssemblyReference.cache
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.Eliminar.resources
-S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.ImporteSueldos.resources
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.Modificar.resources
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.Registrar.resources
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.Inicio.resources
@@ -53,3 +52,15 @@ S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.vbproj.CoreCompileInput
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.exe
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.xml
 S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.pdb
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\Vista.exe.config
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\Vista.exe
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\Vista.pdb
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\Vista.xml
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\biblioteca.dll
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\biblioteca.pdb
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\biblioteca.xml
+S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.VerEmpleados.resources
+S:\vbProyectos\TrabajoObligatorio1\Vista\obj\Debug\Vista.vbproj.CopyComplete
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\BaseDatos.dll
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\BaseDatos.pdb
+S:\vbProyectos\TrabajoObligatorio1\Vista\bin\Debug\BaseDatos.xml

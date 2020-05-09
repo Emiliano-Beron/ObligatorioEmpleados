@@ -68,6 +68,7 @@
     <Compile Include="Empleado.vb" />
     <Compile Include="empleados.vb" />
     <Compile Include="Gerente.vb" />
+    <Compile Include="LlamarConsultas.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -103,6 +104,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseDatos\BaseDatos.vbproj">
+      <Project>{d39ea67f-db72-43b2-8f57-7e25c22193b3}</Project>
+      <Name>BaseDatos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

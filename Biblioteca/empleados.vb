@@ -36,7 +36,7 @@
         Dim index As Integer = 0
 
         While (encontrado = False And index < list.Count)
-            If list(index).Ci1.CompareTo(ci) = 0 Then
+            If list(index)._ci.CompareTo(ci) = 0 Then
                 encontrado = True
             Else
                 index += 1
@@ -60,7 +60,7 @@
         Dim index As Integer = 0
 
         While (encontrado = False And index < list.Count)
-            If list(index).Ci1.CompareTo(ci) = 0 Then
+            If list(index)._ci.CompareTo(ci) = 0 Then
                 encontrado = True
             Else
                 index += 1
@@ -81,17 +81,17 @@
                 Case 1
                     Console.Clear()
                     Console.Write("Ingrese el nuevo Nombre: ")
-                    list(index).Name1 = Console.ReadLine()
+                    list(index)._priNom = Console.ReadLine()
                     Console.WriteLine("=======================")
                 Case 2
                     Console.Clear()
                     Console.Write("Ingrese el nuevo telefono: ")
-                    list(index).Phone1 = Console.ReadLine()
+                    list(index)._phone = Console.ReadLine()
                     Console.WriteLine("=======================")
                 Case 3
                     Console.Clear()
                     Console.Write("Ingrese el nueva direccion: ")
-                    list(index).Adress1 = Console.ReadLine()
+                    list(index)._adress = Console.ReadLine()
                     Console.WriteLine("=======================")
                 'case 4
                 Case 0
@@ -111,7 +111,7 @@
         Dim encontrado As Boolean = False
         Dim index As Integer = 0
         While (encontrado = False And index < list.Count)
-            If list(index).Ci1.CompareTo(ci) = 0 Then
+            If list(index)._ci.CompareTo(ci) = 0 Then
                 encontrado = True
             Else
                 index += 1
@@ -134,7 +134,7 @@
 
         While (encontrado = False And index < list.Count)
 
-            If list(index).Ci1.CompareTo(ci) = 0 Then
+            If list(index)._ci.CompareTo(ci) = 0 Then
                 encontrado = True
             Else
                 index += 1

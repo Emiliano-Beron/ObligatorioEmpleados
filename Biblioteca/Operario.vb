@@ -7,8 +7,8 @@
     Public Sub New()
     End Sub
 
-    Public Sub New(ci As Integer, name As String, phone As Integer, adress As String, grossPay As Double, tipo As String)
-        MyBase.New(ci, name, phone, adress, grossPay, tipo)
+    Public Sub New(ci As Integer, name As String, ape As String, phone As Integer, adress As String, grossPay As Double, tipo As String)
+        MyBase.New(ci, name, ape, phone, adress, grossPay, tipo)
     End Sub
 
     Public Overrides Function plus(salario As Double) As Double

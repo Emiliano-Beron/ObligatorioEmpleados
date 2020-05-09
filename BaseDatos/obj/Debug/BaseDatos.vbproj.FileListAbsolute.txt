@@ -1,0 +1,10 @@
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\bin\Debug\BaseDatos.dll
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\bin\Debug\BaseDatos.pdb
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\bin\Debug\BaseDatos.xml
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.vbprojAssemblyReference.cache
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.Resources.resources
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.vbproj.GenerateResource.cache
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.vbproj.CoreCompileInputs.cache
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.dll
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.xml
+S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.pdb

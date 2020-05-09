@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ImporteSueldos
+Partial Class VerEmpleados
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,27 +22,15 @@ Partial Class ImporteSueldos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lboxListado = New System.Windows.Forms.ListBox()
         Me.btnMostrar = New System.Windows.Forms.Button()
         Me.ChbBuscarEmpleado = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtImporteSueldos = New System.Windows.Forms.TextBox()
+        Me.dgvEmpleados = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lboxListado
-        '
-        Me.lboxListado.BackColor = System.Drawing.SystemColors.Window
-        Me.lboxListado.Enabled = False
-        Me.lboxListado.FormattingEnabled = True
-        Me.lboxListado.HorizontalScrollbar = True
-        Me.lboxListado.Items.AddRange(New Object() {"Cedula ; Nombre ; Direccion ; Telefono ; Sueldo"})
-        Me.lboxListado.Location = New System.Drawing.Point(3, 230)
-        Me.lboxListado.Name = "lboxListado"
-        Me.lboxListado.SelectionMode = System.Windows.Forms.SelectionMode.None
-        Me.lboxListado.Size = New System.Drawing.Size(526, 199)
-        Me.lboxListado.TabIndex = 0
         '
         'btnMostrar
         '
@@ -94,7 +82,7 @@ Partial Class ImporteSueldos
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Silver
-        Me.Label1.Location = New System.Drawing.Point(381, 182)
+        Me.Label1.Location = New System.Drawing.Point(282, 204)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 13)
         Me.Label1.TabIndex = 6
@@ -105,35 +93,43 @@ Partial Class ImporteSueldos
         Me.txtImporteSueldos.Location = New System.Drawing.Point(384, 204)
         Me.txtImporteSueldos.Name = "txtImporteSueldos"
         Me.txtImporteSueldos.ReadOnly = True
-        Me.txtImporteSueldos.Size = New System.Drawing.Size(138, 20)
+        Me.txtImporteSueldos.Size = New System.Drawing.Size(56, 20)
         Me.txtImporteSueldos.TabIndex = 7
         '
-        'ImporteSueldos
+        'dgvEmpleados
+        '
+        Me.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvEmpleados.Location = New System.Drawing.Point(12, 230)
+        Me.dgvEmpleados.Name = "dgvEmpleados"
+        Me.dgvEmpleados.Size = New System.Drawing.Size(510, 199)
+        Me.dgvEmpleados.TabIndex = 8
+        '
+        'VerEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(534, 441)
+        Me.Controls.Add(Me.dgvEmpleados)
         Me.Controls.Add(Me.txtImporteSueldos)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtCedula)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ChbBuscarEmpleado)
         Me.Controls.Add(Me.btnMostrar)
-        Me.Controls.Add(Me.lboxListado)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "ImporteSueldos"
+        Me.Name = "VerEmpleados"
         Me.Text = "ImporteSueldos"
+        CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lboxListado As ListBox
     Friend WithEvents btnMostrar As Button
     Friend WithEvents ChbBuscarEmpleado As CheckBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtCedula As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtImporteSueldos As TextBox
+    Friend WithEvents dgvEmpleados As DataGridView
 End Class

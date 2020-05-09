@@ -2,7 +2,7 @@
 Public Class ConexionODBC
     Property _conexion As OdbcConnection
     Public Sub New()
-        _conexion = New OdbcConnection("dsn=odbcMySQLEmpresa;uid=eberon;pwd=silomontolomeo;")
+        _conexion = New OdbcConnection("dsn=EmpleadosObligatorio;uid=eberon;pwd=silomontolomeo;")
     End Sub
     Public Sub AbrirConexion()
         Try
@@ -38,7 +38,7 @@ Public Class ConexionODBC
 
     Public Function getPersonasActivas() As DataTable
         Dim dt As New DataTable
-        Dim consulta As String = "SELECT * FROM personas"
+        Dim consulta As String = "SELECT * FROM empleado"
         dt = EjecutarConulta(consulta)
         Return dt
     End Function

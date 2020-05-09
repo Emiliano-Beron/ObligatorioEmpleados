@@ -79,10 +79,11 @@
     <Compile Include="Eliminar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ImporteSueldos.Designer.vb">
-      <DependentUpon>ImporteSueldos.vb</DependentUpon>
+    <Compile Include="Principal.vb" />
+    <Compile Include="VerEmpleados.Designer.vb">
+      <DependentUpon>VerEmpleados.vb</DependentUpon>
     </Compile>
-    <Compile Include="ImporteSueldos.vb">
+    <Compile Include="VerEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modificar.Designer.vb">
@@ -124,8 +125,8 @@
     <EmbeddedResource Include="Eliminar.resx">
       <DependentUpon>Eliminar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ImporteSueldos.resx">
-      <DependentUpon>ImporteSueldos.vb</DependentUpon>
+    <EmbeddedResource Include="VerEmpleados.resx">
+      <DependentUpon>VerEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modificar.resx">
       <DependentUpon>Modificar.vb</DependentUpon>
@@ -157,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca\Biblioteca.vbproj">
+      <Project>{85097c2c-d992-451b-b9ef-df7738890b0b}</Project>
+      <Name>Biblioteca</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

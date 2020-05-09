@@ -8,3 +8,7 @@ S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\Biblioteca.vbproj.CoreCo
 S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\biblioteca.dll
 S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\biblioteca.xml
 S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\biblioteca.pdb
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\BaseDatos.dll
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\BaseDatos.pdb
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\BaseDatos.xml
+S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\Biblioteca.vbproj.CopyComplete

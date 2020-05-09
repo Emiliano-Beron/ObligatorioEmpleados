@@ -9,26 +9,35 @@ Public Class Registrar
 
         Try
             Dim cedula As Integer = Integer.Parse(txtCedula.Text)
-            Dim nombre As String = txtNombre.Text
+            Dim nombre As String = txtPriNom.Text
+            Dim ape As String = txtPriApe.Text
             Dim direccion As String = txtDireccion.Text
-            Dim telefono As Integer = Integer.Parse(txtTelefono.Text)
+            'Dim telefono As Integer = Integer.Parse(txtTelefono.Text)
             Dim especializacion As String = ComoboBoxEspecialidad.Text
             Dim salario As Double = Double.Parse(txtSueldo.Text)
 
-            If cedula <> 0 And nombre <> "" And telefono <> 0 And direccion <> "" And salario <> 0.0 Then
+            Dim cons As New LlamarConsultas
+
+            If cedula <> 0 And nombre <> "" And ape <> "" And direccion <> "" And salario <> 0.0 Then 'And telefono <> 0
                 Select Case especializacion
                     Case "Operario"
-                        Dim oper As Operario = New Operario(cedula, nombre, telefono, direccion, salario, "Operario")
-                        Inicio.empleados.SetTotal(oper.plus(salario))
-                        Inicio.empleados.Insert(oper)
+                        Dim oper As Operario = New Operario(cedula, nombre, ape, 0, direccion, salario, "Operario")
+                        salario = oper.plus(salario)
+                        'Inicio.empleados.Insert(oper
+
+                        cons.Ingresar(cedula, nombre, ape, salario, 1, direccion) 'Llamo consulta para ingresar empleado, 1 = tipo Operario
                     Case "Gerente"
-                        Dim ger As Gerente = New Gerente(cedula, nombre, telefono, direccion, salario, "Gerente")
-                        Inicio.empleados.SetTotal(ger.plus(salario))
-                        Inicio.empleados.Insert(ger)
+                        Dim ger As Gerente = New Gerente(cedula, nombre, ape, 0, direccion, salario, "Gerente")
+                        salario = ger.plus(salario)
+                        'Inicio.empleados.Insert(ger)
+
+                        cons.Ingresar(cedula, nombre, ape, salario, 2, direccion) 'Llamo consulta para ingresar empleado, 2 = tipo Gerente
                     Case "Administrativo"
-                        Dim adm As Administrativo = New Administrativo(cedula, nombre, telefono, direccion, salario, "Administrativo")
-                        Inicio.empleados.SetTotal(adm.plus(salario))
-                        Inicio.empleados.Insert(adm)
+                        Dim adm As Administrativo = New Administrativo(cedula, nombre, ape, 0, direccion, salario, "Administrativo")
+                        salario = adm.plus(salario)
+                        'Inicio.empleados.Insert(adm)
+
+                        cons.Ingresar(cedula, nombre, ape, salario, 3, direccion) 'Llamo consulta para ingresar empleado, 3 = tipo Administrativo
                     Case Else
                         MsgBox("seleccione una especializacion")
                 End Select

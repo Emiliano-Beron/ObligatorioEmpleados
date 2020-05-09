@@ -1,78 +1,26 @@
 ﻿Public Class Empleado
 
-    Private ci As Integer
-    Private name As String
-    Private phone As Integer
-    Private adress As String
-    Private grossPay As Double
-    Private tipo As String
+    Property _ci As Integer
+    Property _priNom As String
+    Property _priApe As String
+    Property _phone As Integer
+    Property _adress As String
+    Property _salario As Double
+    Property _tipo As String
     Public Sub New()
     End Sub
-    Public Sub New(ci As Integer, name As String, phone As Integer, adress As String, grossPay As Double, tipo As String)
-        Me.ci = ci
-        Me.name = name
-        Me.phone = phone
-        Me.adress = adress
-        Me.grossPay = grossPay
-        Me.tipo = tipo
+    Public Sub New(ci As Integer, name As String, ape As String, phone As Integer, adress As String, grossPay As Double, tipo As String)
+        _ci = ci
+        _priNom = name
+        _priApe = ape
+        _phone = phone
+        _adress = adress
+        _salario = grossPay
+        _tipo = tipo
     End Sub
 
-    Public Property Ci1 As Integer
-        Get
-            Return ci
-        End Get
-        Set(value As Integer)
-            ci = value
-        End Set
-    End Property
-
-    Public Property Name1 As String
-        Get
-            Return name
-        End Get
-        Set(value As String)
-            name = value
-        End Set
-    End Property
-
-
-    Public Property Adress1 As String
-        Get
-            Return adress
-        End Get
-        Set(value As String)
-            adress = value
-        End Set
-    End Property
-
-    Public Property GrossPay1 As Double
-        Get
-            Return grossPay
-        End Get
-        Set(value As Double)
-            grossPay = value
-        End Set
-    End Property
-    Public Property Phone1 As Integer
-        Get
-            Return phone
-        End Get
-        Set(value As Integer)
-            phone = value
-        End Set
-    End Property
-
-    Public Property Tipo1 As String
-        Get
-            Return tipo
-        End Get
-        Set(value As String)
-            tipo = value
-        End Set
-    End Property
-
     Public Overrides Function ToString() As String
-        Return String.Format(ci & ";" & name & ";" & phone & ";" & adress & ";" & tipo & ";")
+        Return String.Format(_ci & ";" & _priNom & ";" & _priApe & ";" & _phone & ";" & _adress & ";" & _tipo & ";")
     End Function
 
     Public Overridable Function Plus(salario As Double) As Double

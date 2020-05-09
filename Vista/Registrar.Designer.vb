@@ -33,16 +33,20 @@ Partial Class Registrar
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtPriNom = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtPriApe = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtPriApe)
+        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.Controls.Add(Me.btnIngresar)
         Me.GroupBox1.Controls.Add(Me.ComoboBoxEspecialidad)
@@ -53,7 +57,7 @@ Partial Class Registrar
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtTelefono)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.txtNombre)
+        Me.GroupBox1.Controls.Add(Me.txtPriNom)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtCedula)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -105,7 +109,7 @@ Partial Class Registrar
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.Silver
-        Me.Label6.Location = New System.Drawing.Point(215, 138)
+        Me.Label6.Location = New System.Drawing.Point(143, 138)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(80, 13)
         Me.Label6.TabIndex = 39
@@ -113,7 +117,7 @@ Partial Class Registrar
         '
         'txtSueldo
         '
-        Me.txtSueldo.Location = New System.Drawing.Point(197, 111)
+        Me.txtSueldo.Location = New System.Drawing.Point(197, 95)
         Me.txtSueldo.Name = "txtSueldo"
         Me.txtSueldo.Size = New System.Drawing.Size(115, 20)
         Me.txtSueldo.TabIndex = 38
@@ -122,7 +126,7 @@ Partial Class Registrar
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.Silver
-        Me.Label5.Location = New System.Drawing.Point(233, 95)
+        Me.Label5.Location = New System.Drawing.Point(194, 79)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(40, 13)
         Me.Label5.TabIndex = 37
@@ -139,7 +143,7 @@ Partial Class Registrar
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.Silver
-        Me.Label4.Location = New System.Drawing.Point(359, 95)
+        Me.Label4.Location = New System.Drawing.Point(315, 95)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 35
@@ -156,28 +160,28 @@ Partial Class Registrar
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Silver
-        Me.Label3.Location = New System.Drawing.Point(100, 95)
+        Me.Label3.Location = New System.Drawing.Point(33, 95)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Telefono"
         '
-        'txtNombre
+        'txtPriNom
         '
-        Me.txtNombre.Location = New System.Drawing.Point(146, 75)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(207, 20)
-        Me.txtNombre.TabIndex = 32
+        Me.txtPriNom.Location = New System.Drawing.Point(36, 72)
+        Me.txtPriNom.Name = "txtPriNom"
+        Me.txtPriNom.Size = New System.Drawing.Size(155, 20)
+        Me.txtPriNom.TabIndex = 32
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.Silver
-        Me.Label2.Location = New System.Drawing.Point(233, 59)
+        Me.Label2.Location = New System.Drawing.Point(33, 56)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(76, 13)
         Me.Label2.TabIndex = 31
-        Me.Label2.Text = "Nombre"
+        Me.Label2.Text = "Primer Nombre"
         '
         'txtCedula
         '
@@ -190,7 +194,7 @@ Partial Class Registrar
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Silver
-        Me.Label1.Location = New System.Drawing.Point(237, 19)
+        Me.Label1.Location = New System.Drawing.Point(194, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(40, 13)
         Me.Label1.TabIndex = 29
@@ -203,6 +207,23 @@ Partial Class Registrar
         Me.GroupBox2.Size = New System.Drawing.Size(532, 192)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
+        '
+        'txtPriApe
+        '
+        Me.txtPriApe.Location = New System.Drawing.Point(318, 72)
+        Me.txtPriApe.Name = "txtPriApe"
+        Me.txtPriApe.Size = New System.Drawing.Size(155, 20)
+        Me.txtPriApe.TabIndex = 44
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.Silver
+        Me.Label7.Location = New System.Drawing.Point(315, 56)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(76, 13)
+        Me.Label7.TabIndex = 43
+        Me.Label7.Text = "Primer Apellido"
         '
         'Registrar
         '
@@ -231,10 +252,12 @@ Partial Class Registrar
     Friend WithEvents Label4 As Label
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtPriNom As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtCedula As TextBox
     Friend WithEvents Label1 As Label
     Public WithEvents ComoboBoxEspecialidad As ComboBox
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents txtPriApe As TextBox
+    Friend WithEvents Label7 As Label
 End Class

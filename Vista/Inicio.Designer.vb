@@ -27,7 +27,6 @@ Partial Class Inicio
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.btnImporte = New System.Windows.Forms.Button()
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -45,7 +44,6 @@ Partial Class Inicio
         Me.PanelSideMenu.Controls.Add(Me.btnEliminar)
         Me.PanelSideMenu.Controls.Add(Me.btnModificar)
         Me.PanelSideMenu.Controls.Add(Me.btnBuscar)
-        Me.PanelSideMenu.Controls.Add(Me.btnImporte)
         Me.PanelSideMenu.Controls.Add(Me.btnRegistrar)
         Me.PanelSideMenu.Controls.Add(Me.PanelLogo)
         Me.PanelSideMenu.Dock = System.Windows.Forms.DockStyle.Left
@@ -80,7 +78,7 @@ Partial Class Inicio
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.ForeColor = System.Drawing.Color.Silver
-        Me.btnEliminar.Location = New System.Drawing.Point(0, 249)
+        Me.btnEliminar.Location = New System.Drawing.Point(0, 204)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnEliminar.Size = New System.Drawing.Size(170, 45)
@@ -98,7 +96,7 @@ Partial Class Inicio
         Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.ForeColor = System.Drawing.Color.Silver
-        Me.btnModificar.Location = New System.Drawing.Point(0, 204)
+        Me.btnModificar.Location = New System.Drawing.Point(0, 159)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnModificar.Size = New System.Drawing.Size(170, 45)
@@ -116,7 +114,7 @@ Partial Class Inicio
         Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBuscar.ForeColor = System.Drawing.Color.Silver
-        Me.btnBuscar.Location = New System.Drawing.Point(0, 159)
+        Me.btnBuscar.Location = New System.Drawing.Point(0, 114)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnBuscar.Size = New System.Drawing.Size(170, 45)
@@ -125,24 +123,6 @@ Partial Class Inicio
         Me.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnBuscar.UseVisualStyleBackColor = True
-        '
-        'btnImporte
-        '
-        Me.btnImporte.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnImporte.FlatAppearance.BorderSize = 0
-        Me.btnImporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.btnImporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.btnImporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnImporte.ForeColor = System.Drawing.Color.Silver
-        Me.btnImporte.Location = New System.Drawing.Point(0, 114)
-        Me.btnImporte.Name = "btnImporte"
-        Me.btnImporte.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnImporte.Size = New System.Drawing.Size(170, 45)
-        Me.btnImporte.TabIndex = 2
-        Me.btnImporte.Text = "Importe a pagar"
-        Me.btnImporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnImporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnImporte.UseVisualStyleBackColor = True
         '
         'btnRegistrar
         '
@@ -213,7 +193,6 @@ Partial Class Inicio
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnBuscar As Button
-    Friend WithEvents btnImporte As Button
     Friend WithEvents btnRegistrar As Button
     Friend WithEvents PanelLogo As Panel
     Friend WithEvents PanelChildForm As Panel
