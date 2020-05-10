@@ -2,7 +2,7 @@
 Public Class Consulta_Ingresar
     Private con As OdbcConnection
     Public Sub New()
-        con = New OdbcConnection("dsn=EmpleadosObligatorio;uid=eberon;pwd=silomontolomeo;")
+        con = New OdbcConnection("dsn=EmpleadosObligatorio;uid=;pwd=;")
     End Sub
 
     Public Function Ingresar(ci As Integer,
