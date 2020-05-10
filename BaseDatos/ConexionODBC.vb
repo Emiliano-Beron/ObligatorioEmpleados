@@ -2,7 +2,7 @@
 Public Class ConexionODBC
     Property _conexion As OdbcConnection
     Public Sub New()
-        _conexion = New OdbcConnection("dsn=EmpleadosObligatorio;uid=eberon;pwd=silomontolomeo;")
+        _conexion = New OdbcConnection("dsn=EmpleadosObligatorio;uid=;pwd=;")
     End Sub
     Public Sub AbrirConexion()
         Try
