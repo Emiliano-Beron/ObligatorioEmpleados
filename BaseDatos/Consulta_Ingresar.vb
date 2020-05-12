@@ -1,11 +1,8 @@
 ﻿Imports System.Data.Odbc
 Public Class Consulta_Ingresar
     Inherits ConexionODBC
+
     Public Sub New()
-<<<<<<< HEAD
-=======
-        con = New OdbcConnection("dsn=EmpleadosObligatorio;uid=;pwd=;")
->>>>>>> 5d853bb97095ce94c93c7ec18afee60e4e8b0b0d
     End Sub
     Public Function Ingresar(ci As Integer,
                     priNom As String,

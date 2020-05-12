@@ -32,4 +32,7 @@ Public Class LlamarConsultas
     Public Function Indi(row As String, ci As Integer, dato As String) As String
         Return con.HacerConsulta("SELECT " & row & " FROM empleado WHERE ci=" & ci.ToString, dato)
     End Function
+    Public Function PagoTotal() As Integer
+        Return con.PagoTotal
+    End Function
 End Class

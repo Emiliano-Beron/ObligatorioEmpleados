@@ -8,7 +8,7 @@ Public Class VerEmpleados
         Dim cons As New LlamarConsultas
         Dim tipo As String = cbVer.Text
         dgvEmpleados.DataSource = cons.CargarTodo(tipo)
-
+        txtImporteSueldos.Text = cons.PagoTotal
     End Sub
 
     Private Sub ChbBuscarEmpleado_CheckedChanged(sender As Object, e As EventArgs) Handles ChbBuscarEmpleado.CheckedChanged
