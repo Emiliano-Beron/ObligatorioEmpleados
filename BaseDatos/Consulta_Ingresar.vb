@@ -1,10 +1,8 @@
 ﻿Imports System.Data.Odbc
 Public Class Consulta_Ingresar
-    Private con As OdbcConnection
+    Inherits ConexionODBC
     Public Sub New()
-        con = New OdbcConnection("dsn=EmpleadosObligatorio;uid=eberon;pwd=silomontolomeo;")
     End Sub
-
     Public Function Ingresar(ci As Integer,
                     priNom As String,
                     priApe As String,
@@ -15,21 +13,22 @@ Public Class Consulta_Ingresar
         Dim _consulta As String
         Dim command As OdbcCommand
         Dim _resultado As Boolean = False
-        _consulta = "INSERT INTO empleado(ci,priNom,priApe,salario,idTipo,direccion)"
+        'Creo la consulta para ingresar un empleado
+        _consulta = "INSERT INTO empleado(ci,priNom,priApe,salario,direccion,tipo)"
         _consulta &= " VALUES ( "
         _consulta &= ci.ToString & ","
         _consulta &= "'" & priNom & "',"
         _consulta &= "'" & priApe & "',"
         _consulta &= "'" & sueldo & "',"
-        _consulta &= "'" & tipo & "',"
-        _consulta &= "'" & dir & "')"
+        _consulta &= "'" & dir & "',"
+        _consulta &= "'" & tipo & "')"
 
-        command = New OdbcCommand(_consulta, con)
+        command = New OdbcCommand(_consulta, _conexion)
 
         Try
-            con.Open()
+            AbrirConexion()
             command.ExecuteNonQuery()
-            con.Close()
+            CerrarConexion()
             _resultado = True
         Catch ex As Exception
             MsgBox("Error : " & ex.Message)

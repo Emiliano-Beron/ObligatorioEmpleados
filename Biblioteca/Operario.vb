@@ -1,13 +1,13 @@
 ﻿Public Class Operario
     Inherits Empleado
 
-    Private totalPay As Double
+    Private totalPay As Integer
     Private Const increse As Double = 0.38
 
     Public Sub New()
     End Sub
 
-    Public Sub New(ci As Integer, name As String, ape As String, phone As Integer, adress As String, grossPay As Double, tipo As String)
+    Public Sub New(ci As Integer, name As String, ape As String, phone As Integer, adress As String, grossPay As Integer, tipo As String)
         MyBase.New(ci, name, ape, phone, adress, grossPay, tipo)
     End Sub
 

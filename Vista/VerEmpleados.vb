@@ -1,12 +1,13 @@
 ﻿Imports biblioteca
 Public Class VerEmpleados
     Private Sub ImporteSueldos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        inicializarTabla()
+        'inicializarTabla()
     End Sub
 
     Private Sub btnMostrar_Click(sender As Object, e As EventArgs) Handles btnMostrar.Click
         Dim cons As New LlamarConsultas
-        dgvEmpleados.DataSource = cons.Cargar()
+        Dim tipo As String = cbVer.Text
+        dgvEmpleados.DataSource = cons.CargarTodo(tipo)
 
     End Sub
 

@@ -1,14 +1,16 @@
 ﻿Imports System.Data.Odbc
 Public Class ConexionODBC
+    Const _user As String = "eberon"
+    Const _pass As String = "silomontolomeo"
     Property _conexion As OdbcConnection
     Public Sub New()
-        _conexion = New OdbcConnection("dsn=EmpleadosObligatorio;uid=eberon;pwd=silomontolomeo;")
+        _conexion = New OdbcConnection("dsn=EmpleadosObligatorio;uid=" & _user & ";pwd=" & _pass & ";")
     End Sub
     Public Sub AbrirConexion()
         Try
             _conexion.Open()
         Catch ex As Exception
-            Throw New Exception("ERROR en AbrirConexion() :: " + ex.Message)
+            MsgBox("Error : " & ex.Message)
         End Try
     End Sub
 
@@ -16,30 +18,7 @@ Public Class ConexionODBC
         Try
             _conexion.Close()
         Catch ex As Exception
-            Throw New Exception("ERROR en CerrarConexion() :: " + ex.Message)
+            MsgBox("Error : " & ex.Message)
         End Try
     End Sub
-    Private Function EjecutarConulta(consulta As String) As DataTable
-        Dim dt As New DataTable
-        Dim da As OdbcDataAdapter
-        Dim ds As New DataSet
-
-        Try
-            da = New OdbcDataAdapter(consulta, _conexion)
-            AbrirConexion()
-            da.Fill(ds)
-            dt = ds.Tables(0)
-            CerrarConexion()
-        Catch ex As Exception
-            Throw New Exception("ERROR en EjecutarConulta() :: " + ex.Message)
-        End Try
-        Return dt
-    End Function
-
-    Public Function getPersonasActivas() As DataTable
-        Dim dt As New DataTable
-        Dim consulta As String = "SELECT * FROM empleado"
-        dt = EjecutarConulta(consulta)
-        Return dt
-    End Function
 End Class

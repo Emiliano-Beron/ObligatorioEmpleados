@@ -5,11 +5,11 @@
     Property _priApe As String
     Property _phone As Integer
     Property _adress As String
-    Property _salario As Double
+    Property _salario As Integer
     Property _tipo As String
     Public Sub New()
     End Sub
-    Public Sub New(ci As Integer, name As String, ape As String, phone As Integer, adress As String, grossPay As Double, tipo As String)
+    Public Sub New(ci As Integer, name As String, ape As String, phone As Integer, adress As String, grossPay As Integer, tipo As String)
         _ci = ci
         _priNom = name
         _priApe = ape

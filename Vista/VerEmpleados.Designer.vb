@@ -29,6 +29,7 @@ Partial Class VerEmpleados
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtImporteSueldos = New System.Windows.Forms.TextBox()
         Me.dgvEmpleados = New System.Windows.Forms.DataGridView()
+        Me.cbVer = New System.Windows.Forms.ComboBox()
         CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,7 +83,7 @@ Partial Class VerEmpleados
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Silver
-        Me.Label1.Location = New System.Drawing.Point(282, 204)
+        Me.Label1.Location = New System.Drawing.Point(355, 204)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 13)
         Me.Label1.TabIndex = 6
@@ -90,7 +91,7 @@ Partial Class VerEmpleados
         '
         'txtImporteSueldos
         '
-        Me.txtImporteSueldos.Location = New System.Drawing.Point(384, 204)
+        Me.txtImporteSueldos.Location = New System.Drawing.Point(457, 204)
         Me.txtImporteSueldos.Name = "txtImporteSueldos"
         Me.txtImporteSueldos.ReadOnly = True
         Me.txtImporteSueldos.Size = New System.Drawing.Size(56, 20)
@@ -104,12 +105,23 @@ Partial Class VerEmpleados
         Me.dgvEmpleados.Size = New System.Drawing.Size(510, 199)
         Me.dgvEmpleados.TabIndex = 8
         '
+        'cbVer
+        '
+        Me.cbVer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbVer.FormattingEnabled = True
+        Me.cbVer.Items.AddRange(New Object() {"Todo", "Operario", "Gerente", "Administrativo"})
+        Me.cbVer.Location = New System.Drawing.Point(12, 122)
+        Me.cbVer.Name = "cbVer"
+        Me.cbVer.Size = New System.Drawing.Size(138, 21)
+        Me.cbVer.TabIndex = 9
+        '
         'VerEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(534, 441)
+        Me.Controls.Add(Me.cbVer)
         Me.Controls.Add(Me.dgvEmpleados)
         Me.Controls.Add(Me.txtImporteSueldos)
         Me.Controls.Add(Me.Label1)
@@ -132,4 +144,5 @@ Partial Class VerEmpleados
     Friend WithEvents Label1 As Label
     Friend WithEvents txtImporteSueldos As TextBox
     Friend WithEvents dgvEmpleados As DataGridView
+    Friend WithEvents cbVer As ComboBox
 End Class
