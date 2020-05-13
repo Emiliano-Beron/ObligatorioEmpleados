@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionODBC.vb" />
+    <Compile Include="Consulta_Eliminar.vb" />
     <Compile Include="Consulta_Ingresar.vb" />
     <Compile Include="Consulta_Modificar.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

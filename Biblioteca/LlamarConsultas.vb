@@ -21,7 +21,7 @@ Public Class LlamarConsultas
         Return con.GetPersonasActivas(tipo)
     End Function
 
-    Public Function modif(ci As String, pnom As String, pape As String, dir As String, salario As Integer, tipo As String)
+    Public Function Modif(ci As String, pnom As String, pape As String, dir As String, salario As Integer, tipo As String)
         Dim cons As New Consulta_Modificar()
         If cons.Modificar(ci, pnom, pape, dir, salario, tipo) Then
             MsgBox("Se modifico")
@@ -35,4 +35,11 @@ Public Class LlamarConsultas
     Public Function PagoTotal() As Integer
         Return con.PagoTotal
     End Function
+    Public Function UnEmpleado(ci As Integer)
+        Return con.UnEmpleado(ci)
+    End Function
+    Public Sub Eliminar(ci As Integer)
+        Dim cons As New Consulta_Eliminar()
+        cons.eliminar(ci)
+    End Sub
 End Class

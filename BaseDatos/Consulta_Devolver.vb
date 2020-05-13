@@ -74,4 +74,20 @@ Public Class Consulta_Devolver
             MsgBox("Error : " & ex.Message)
         End Try
     End Function
+    Public Function UnEmpleado(ci As Integer) As DataTable
+        Dim dt As New DataTable
+        Dim da As OdbcDataAdapter
+        Dim ds As New DataSet
+
+        Try
+            da = New OdbcDataAdapter("SELECT * FROM empleado WHERE ci=" & ci, _conexion)
+            AbrirConexion()
+            da.Fill(ds)
+            dt = ds.Tables(0)
+            CerrarConexion()
+        Catch ex As Exception
+            MsgBox("Error : " & ex.Message)
+        End Try
+        Return dt
+    End Function
 End Class
