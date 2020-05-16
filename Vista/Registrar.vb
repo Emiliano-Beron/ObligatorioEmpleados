@@ -47,7 +47,6 @@ Public Class Registrar
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        MsgBox("se ingreso con exito")
     End Sub
 
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click

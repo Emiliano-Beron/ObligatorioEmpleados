@@ -8,3 +8,13 @@ S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.vbproj.CoreComp
 S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.dll
 S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.xml
 S:\vbProyectos\TrabajoObligatorio1\BaseDatos\obj\Debug\BaseDatos.pdb
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\bin\Debug\BaseDatos.dll
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\bin\Debug\BaseDatos.pdb
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\bin\Debug\BaseDatos.xml
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\obj\Debug\BaseDatos.vbprojAssemblyReference.cache
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\obj\Debug\BaseDatos.Resources.resources
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\obj\Debug\BaseDatos.vbproj.GenerateResource.cache
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\obj\Debug\BaseDatos.vbproj.CoreCompileInputs.cache
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\obj\Debug\BaseDatos.dll
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\obj\Debug\BaseDatos.xml
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\BaseDatos\obj\Debug\BaseDatos.pdb

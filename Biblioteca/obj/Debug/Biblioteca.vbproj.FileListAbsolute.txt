@@ -12,3 +12,17 @@ S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\BaseDatos.dll
 S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\BaseDatos.pdb
 S:\vbProyectos\TrabajoObligatorio1\Biblioteca\bin\Debug\BaseDatos.xml
 S:\vbProyectos\TrabajoObligatorio1\Biblioteca\obj\Debug\Biblioteca.vbproj.CopyComplete
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\bin\Debug\biblioteca.dll
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\bin\Debug\biblioteca.pdb
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\bin\Debug\biblioteca.xml
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\bin\Debug\BaseDatos.dll
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\bin\Debug\BaseDatos.pdb
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\bin\Debug\BaseDatos.xml
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\Biblioteca.vbprojAssemblyReference.cache
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\biblioteca.Resources.resources
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\Biblioteca.vbproj.GenerateResource.cache
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\Biblioteca.vbproj.CoreCompileInputs.cache
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\Biblioteca.vbproj.CopyComplete
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\biblioteca.dll
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\biblioteca.xml
+C:\Users\GaaraXz\source\repos\ObligatorioEmpleados\Biblioteca\obj\Debug\biblioteca.pdb

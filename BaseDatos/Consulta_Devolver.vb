@@ -67,8 +67,12 @@ Public Class Consulta_Devolver
             comandoSQL.ExecuteNonQuery()
             reader = comandoSQL.ExecuteReader()
             While reader.Read
-                Dim i As Integer = Integer.Parse(reader("salario"))
-                Return i
+                Try
+                    Dim i As Integer = Integer.Parse(reader("salario"))
+                    Return i
+                Catch ex As Exception
+                    Return 0
+                End Try
             End While
         Catch ex As OdbcException
             MsgBox("Error : " & ex.Message)

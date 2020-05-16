@@ -175,7 +175,6 @@
         contacto = ""
         phone = ""
     End Sub
-
     Public Overrides Function ToString() As String
         Return String.Format(list.ToString())
     End Function

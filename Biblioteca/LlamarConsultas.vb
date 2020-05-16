@@ -4,19 +4,17 @@ Public Class LlamarConsultas
 
     Public Sub New()
     End Sub
-    Public Function Ingresar(ci As Integer,
+    Public Sub Ingresar(ci As Integer,
                     priNom As String,
                     priApe As String,
                     sueldo As Double,
                     tipo As String,
-                    dir As String) As Boolean
+                    dir As String)
         Dim cons As New Consulta_Ingresar
         If cons.Ingresar(ci, priNom, priApe, sueldo, tipo, dir) = True Then
-            Return True
-        Else
-            Return False
+            MsgBox("Se ingreso")
         End If
-    End Function
+    End Sub
     Public Function CargarTodo(tipo As String)
         Return con.GetPersonasActivas(tipo)
     End Function
